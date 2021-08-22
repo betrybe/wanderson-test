@@ -2,13 +2,15 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
+  
+    }
 
 .items {
   display: flex;
   flex-basis: 70%;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .item {
@@ -20,7 +22,7 @@
   height: auto;
   margin: 5px;
   width: 200px;
-}
+  }
 
 .item .item__sku {
   display: none;
@@ -42,16 +44,31 @@
   cursor: pointer;
   margin: 0;
   padding: 5px;
-}
+  }
 
 .cart {
   display: flex;
   flex-basis: 30%;
   flex-flow: column wrap;
+  
 }
 
 .cart .cart__title {
   flex-basis: 1;
   font-size: 16pt;
   text-align: center;
+  margin-top: 15px;
 }
+ 
+.cart p {
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
