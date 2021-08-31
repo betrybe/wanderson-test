@@ -54,11 +54,12 @@
   flex-basis: 1;
   font-size: 16pt;
   text-align: center;
-}
+  }
 
 /* formatação do texto da página */
 body{
-  font-family: Arial, Verdana, Tahoma, Sans-Serif;
-  color:black;
-  font-size: 11pt;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:darkblue;
+  font-size: 10pt;
+  font-style:normal;
 }
