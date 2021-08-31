@@ -48,10 +48,23 @@
   display: flex;
   flex-basis: 30%;
   flex-flow: column wrap;
-}
+  border: solid 2px blue;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: fit-content;
+  padding: 15px;
+  }
 
 .cart .cart__title {
   flex-basis: 1;
   font-size: 16pt;
   text-align: center;
+  }
+
+/* formatação do texto da página */
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:darkblue;
+  font-size: 10pt;
+  font-style:normal;
 }
