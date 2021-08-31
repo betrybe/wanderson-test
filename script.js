@@ -8,11 +8,6 @@ function createLoadingSpan() {
   document.querySelector('body').appendChild(loading);
 }
 
-function removeLoadingSpan() {
-  const loading = document.querySelector('span.loading');
-  document.querySelector('body').removeChild(loading);
-}
-
 function createProductImageElement(imageSource) {
   const img = document.createElement('img');
   img.className = 'item__image';
@@ -38,7 +33,6 @@ function createCustomButton(element, className, innerText, sku) {
   return button;
 }
 
-
 function createProductItemElement(sku, name, image) {
   const section = document.createElement('section');
   section.className = 'item';
@@ -47,10 +41,6 @@ function createProductItemElement(sku, name, image) {
   section.appendChild(createProductImageElement(image));
   section.appendChild(createCustomButton('button', 'item__add', 'Adicionar ao carrinho!', sku,));
   addSectionItens(section);
-}
-
-function getSkuFromProductItem(item) {
-  return item.querySelector('span.item__sku').innerText;
 }
 
 // Criação da variável sectionCont
@@ -87,9 +77,7 @@ function clearCart() {
 function cartItemClickListener(event) {
   event.target.remove();
   precoTotal.innerText = parseFloat(precoTotal.innerText) - parseFloat(event.target.id);
-  // storageCart();
-  // cartCounter();
-}
+  }
 
 function addSectionItens(element) {
   const sectionPai = document.querySelector('.items');
@@ -118,7 +106,6 @@ function getProduto(sku) {
       sumTotalPricesCart(dados.price);
     });
   })
-
 }
 
 //Adicionado os eventos que ao carregar a página, limpa os valores do carrinho
