@@ -55,3 +55,10 @@
   font-size: 16pt;
   text-align: center;
 }
+
+/* formatação do texto da página */
+body{
+  font-family: Arial, Verdana, Tahoma, Sans-Serif;
+  color:black;
+  font-size: 11pt;
+}
